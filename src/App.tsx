@@ -6,7 +6,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 // @ts-ignore
 import * as random from 'maath/random/dist/maath-random.esm';
-import { User, FlaskConical, BookOpen, Newspaper, Sun, Moon } from 'lucide-react';
+import { User, FlaskConical, BookOpen, Newspaper, Sun, Moon, Mail, GraduationCap, Linkedin, Github, Link as LinkIcon } from 'lucide-react';
 
 // --- Types ---
 interface Paper {
@@ -233,46 +233,89 @@ const AboutPage = ({ content }: { content: string }) => {
   const piTitleMatch = introPart.match(/##\s+(.*)/);
   const piTitle = piTitleMatch ? piTitleMatch[1] : "Principal Investigator";
 
-  // Extracting name (starts with ### )
-  const nameMatch = introPart.match(/###\s+(.*)/);
-  const name = nameMatch ? nameMatch[1] : "Yang Jeong Park, Ph.D.";
+      // Extracting name (starts with ### )
+      const nameMatch = introPart.match(/###\s+(.*)/);
+      const name = nameMatch ? nameMatch[1] : "Yang Jeong Park, Ph.D.";
+      
+      // Extract social links
+      const emailMatch = introPart.match(/e-mail:\s*(.*)/i);
+      const email = emailMatch ? emailMatch[1].trim() : null;
+      const scholarMatch = introPart.match(/scholar:\s*(.*)/i);
+      const scholar = scholarMatch ? scholarMatch[1].trim() : null;
+      const linkedinMatch = introPart.match(/linkedin:\s*(.*)/i);
+      const linkedin = linkedinMatch ? (linkedinMatch[1].includes('http') ? linkedinMatch[1].trim() : `https://${linkedinMatch[1].trim()}`) : null;
+      const githubMatch = introPart.match(/github:\s*(.*)/i);
+      const github = githubMatch ? githubMatch[1].trim() : null;
+      const orcidMatch = introPart.match(/orcid:\s*(.*)/i);
+      const orcid = orcidMatch ? orcidMatch[1].trim() : null;
   
-  // Try to remove the image and name from introPart to get the affiliation/quote
-  let affiliationPart = introPart;
-  if (imgMatch) affiliationPart = affiliationPart.replace(imgMatch[0], '');
-  if (nameMatch) affiliationPart = affiliationPart.replace(nameMatch[0], '');
-  if (piTitleMatch) affiliationPart = affiliationPart.replace(piTitleMatch[0], '');
-  affiliationPart = affiliationPart.replace('# Profile', '').trim();
-
-  return (
-    <GlassWindow>
-      <div className="about-layout">
-        <h1 className="newsreader-title" style={{ marginBottom: '2rem' }}>Profile</h1>
-        <div className="member-group-section">
-          <h2 className="newsreader-title" style={{ fontSize: '2.2rem', marginBottom: '2rem' }}>{piTitle}</h2>
-          <div className="profile-grid">
-            {/* Left Column: Profile Card */}
-            <div className="profile-card glass">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="profile-card-image"
-              >
-                <img 
-                  src={imgSrc} 
-                  alt={name} 
-                />
-                <div className="profile-image-decoration"></div>
-              </motion.div>
-              <div className="profile-card-info markdown">
-                <h2 style={{ borderBottom: 'none', paddingBottom: 0, marginTop: '1rem', textAlign: 'center' }}>{name}</h2>
-                <div className="profile-affiliation">
-                  <ReactMarkdown components={{ img: () => null }}>{affiliationPart}</ReactMarkdown>
+      // Try to remove the image and name from introPart to get the affiliation/quote
+      let affiliationPart = introPart;
+      if (imgMatch) affiliationPart = affiliationPart.replace(imgMatch[0], '');
+      if (nameMatch) affiliationPart = affiliationPart.replace(nameMatch[0], '');
+      if (piTitleMatch) affiliationPart = affiliationPart.replace(piTitleMatch[0], '');
+      if (emailMatch) affiliationPart = affiliationPart.replace(emailMatch[0], '');
+      if (scholarMatch) affiliationPart = affiliationPart.replace(scholarMatch[0], '');
+      if (linkedinMatch) affiliationPart = affiliationPart.replace(linkedinMatch[0], '');
+      if (githubMatch) affiliationPart = affiliationPart.replace(githubMatch[0], '');
+      if (orcidMatch) affiliationPart = affiliationPart.replace(orcidMatch[0], '');
+      affiliationPart = affiliationPart.replace('# Profile', '').trim();
+  
+      return (
+        <GlassWindow>
+          <div className="about-layout">
+            <h1 className="newsreader-title" style={{ marginBottom: '2rem' }}>Profile</h1>
+            <div className="member-group-section">
+              <h2 className="newsreader-title" style={{ fontSize: '2.2rem', marginBottom: '2rem' }}>{piTitle}</h2>
+              <div className="profile-grid">
+                {/* Left Column: Profile Card */}
+                <div className="profile-card glass">
+                  <motion.div 
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="profile-card-image"
+                  >
+                    <img 
+                      src={imgSrc} 
+                      alt={name} 
+                    />
+                    <div className="profile-image-decoration"></div>
+                  </motion.div>
+                  <div className="profile-card-info markdown">
+                    <h2 style={{ borderBottom: 'none', paddingBottom: 0, marginTop: '1rem', textAlign: 'center' }}>{name}</h2>
+                    <div className="profile-affiliation">
+                      <ReactMarkdown components={{ img: () => null }}>{affiliationPart}</ReactMarkdown>
+                    </div>
+                    <div className="profile-social-links">
+                      {email && (
+                        <a href={`mailto:${email}`} aria-label="Email" title="Email" target="_blank" rel="noreferrer">
+                          <Mail size={20} />
+                        </a>
+                      )}
+                      {scholar && (
+                        <a href={scholar} aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noreferrer">
+                          <GraduationCap size={20} />
+                        </a>
+                      )}
+                      {linkedin && (
+                        <a href={linkedin} aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noreferrer">
+                          <Linkedin size={20} />
+                        </a>
+                      )}
+                      {github && (
+                        <a href={github} aria-label="GitHub" title="GitHub" target="_blank" rel="noreferrer">
+                          <Github size={20} />
+                        </a>
+                      )}
+                      {orcid && (
+                        <a href={orcid} aria-label="ORCID" title="ORCID" target="_blank" rel="noreferrer">
+                          <LinkIcon size={20} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
             {/* Right Column: Details */}
             <div className="profile-details">
               {educationPart && (

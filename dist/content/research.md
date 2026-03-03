@@ -4,7 +4,7 @@
 
 For centuries, scientific progress has relied on a slow, sequential process of human intuition, theoretical modeling, and trial-and-error experimentation. As we tackle the incomprehensible complexity of modern scientific challenges—from designing next-generation materials to uncovering quantum phenomena—these fragmented approaches are no longer sufficient. 
 
-At the **Scientific AI Lab (SAIL)**, we do not view simulation, experimentation, and data analysis as isolated tasks. Instead, our mission is to build a **fully integrated, closed-loop discovery system**. We envision a paradigm where digital simulations are drastically accelerated, physical laboratory equipment is entirely automated, and a centralized Artificial Intelligence orchestrates this continuous cycle of learning and creation. 
+At the **Scientific Artificial Intelligence Laboratory (SAIL)**, we do not view simulation, experimentation, and data analysis as isolated tasks. Instead, our mission is to build a **fully integrated, closed-loop discovery system**. We envision a paradigm where digital simulations are drastically accelerated, physical laboratory equipment is entirely automated, and a centralized Artificial Intelligence orchestrates this continuous cycle of learning and creation. 
 
 By seamlessly connecting the digital and physical realms, we aim to overcome the limitations of human scale and intuition. While our foundational applications lie in revolutionizing materials science, the methodologies we develop—spanning quantum computing to physics-informed AI—are designed to push the boundaries of broader scientific disciplines. 
 

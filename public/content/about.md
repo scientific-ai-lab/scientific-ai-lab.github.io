@@ -9,8 +9,15 @@
 **Assistant Professor**    
 Department of Materials Science and Engineering   
 Graduate School of Artificial Intelligence   
-Graduate School of Semiconductor Materials and Devices Engineering    
+Graduate School of Semiconductor Materials and Devices Engineering   
+Department of Nuclear Engineering  
 **Ulsan National Institute of Science and Technology**   
+
+e-mail: parkyj@unist.ac.kr   
+scholar: https://scholar.google.com/citations?user=vcdDzocAAAAJ   
+linkedin: www.linkedin.com/in/yang-jeong-park-64aa3599   
+github: https://github.com/parkyjmit   
+ORCID: https://orcid.org/0000-0002-3773-7407
 
 
 

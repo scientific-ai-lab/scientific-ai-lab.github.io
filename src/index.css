@@ -937,6 +937,28 @@ body {
   letter-spacing: -0.015em;
 }
 
+.profile-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.profile-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.profile-social-links a:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
 .profile-affiliation blockquote {
   font-size: 1rem;
   margin-top: 1.5rem;
