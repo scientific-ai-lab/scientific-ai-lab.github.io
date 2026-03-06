@@ -722,16 +722,16 @@ function AppContent() {
             </div>
             <div className="nav-links">
               <NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : '')}>
-                <span className="nav-icon"><User size={18} /></span> Profile
+                <span className="nav-icon"><User size={18} /></span> <span className="nav-text">Profile</span>
               </NavLink>
               <NavLink to="/research" className={({ isActive }) => (isActive ? 'active' : '')}>
-                <span className="nav-icon"><FlaskConical size={18} /></span> Research
+                <span className="nav-icon"><FlaskConical size={18} /></span> <span className="nav-text">Research</span>
               </NavLink>
               <NavLink to="/publications" className={({ isActive }) => (isActive ? 'active' : '')}>
-                <span className="nav-icon"><BookOpen size={18} /></span> Publications
+                <span className="nav-icon"><BookOpen size={18} /></span> <span className="nav-text">Publications</span>
               </NavLink>
               <NavLink to="/news" className={({ isActive }) => (isActive ? 'active' : '')}>
-                <span className="nav-icon"><Newspaper size={18} /></span> News
+                <span className="nav-icon"><Newspaper size={18} /></span> <span className="nav-text">News</span>
               </NavLink>
             </div>
             <div className="nav-footer">

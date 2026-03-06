@@ -1078,6 +1078,24 @@ body {
     transition: transform 0.2s ease;
   }
 
+  /* 더 작은 화면에서 네비게이션 텍스트 완전히 숨김 */
+  @media (max-width: 600px) {
+    .nav-links a .nav-text {
+      display: none;
+    }
+    .nav-links a {
+      justify-content: center;
+      padding: 0.6rem 0.2rem;
+    }
+    .nav-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+    .brand-separator {
+      display: none; /* 공간 확보를 위해 로고 옆 선 숨김 */
+    }
+  }
+
   .nav-footer {
     margin-top: 0;
     flex-shrink: 0;
