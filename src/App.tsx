@@ -170,6 +170,12 @@ const LandingPage = ({ darkMode, onToggleTheme }: { darkMode: boolean; onToggleT
             <p>Latest Updates, Seminars & Lab Activities</p>
           </motion.div>
         </div>
+        
+        <div className="landing-mobile-footer">
+          <button onClick={onToggleTheme} className="theme-toggle" aria-label="Toggle theme">
+            {darkMode ? <Moon size={20} /> : <Sun size={20} />}
+          </button>
+        </div>
       </motion.div>
     </div>
   );

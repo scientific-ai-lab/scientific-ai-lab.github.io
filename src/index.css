@@ -377,6 +377,10 @@ body {
   pointer-events: auto;
 }
 
+.landing-mobile-footer {
+  display: none;
+}
+
 .landing-brand {
   display: flex;
   align-items: center;
@@ -1153,11 +1157,17 @@ body {
   }
   
   .landing-theme-toggle {
-    top: auto;
-    bottom: 2rem;
-    left: 2rem;
-    right: auto;
-    position: fixed;
+    display: none;
+  }
+  
+  .landing-mobile-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .landing-mobile-footer .theme-toggle {
     background: var(--bg-glass-strong);
     border-radius: 50%;
     padding: 0.8rem;
