@@ -66,7 +66,7 @@ const GlobalFooter = () => (
       alt="UNIST Logo" 
       className="footer-logo"
     />
-    <p>© {new Date().getFullYear()} Scientific AI Lab. All rights reserved.</p>
+    <p>© {new Date().getFullYear()} Scientific Artificial Intelligence Laboratory. All rights reserved.</p>
   </footer>
 );
 

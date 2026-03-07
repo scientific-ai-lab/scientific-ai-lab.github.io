@@ -384,15 +384,16 @@ body {
 .landing-brand {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   pointer-events: auto;
 }
 
 .landing-logo {
   content: url('/images/logo_simple_navy.png');
-  height: 44px;
+  height: 36px;
   width: auto;
   opacity: 1;
+  transform: translateY(-3px);
 }
 
 :root[data-theme='dark'] .landing-logo {
