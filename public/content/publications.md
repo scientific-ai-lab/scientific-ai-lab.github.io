@@ -2,9 +2,10 @@
 
 &dagger; equal contribution; * corresponding author
 
-26.  So Yeon Kim, Yang Jeong Park*, and Ju Li*. "**Leveraging neural network interatomic potentials for a foundation model of chemistry**". *npj Computational Materials*, under revision (2026).
-25.  Yang Jeong Park&dagger;, Jongbeom Kim&dagger;, Seung Un Lee, Jino Im*, Sungroh Yoon*, and Sang Il Seok*. "**Data-driven discovery of ammonium ions for post-treatment of perovskite solar cells via low-dimensional active learning**". *Advanced Materials*, under revision (2026).
-24.  Yang Jeong Park&dagger;, Mayank Kumaran, Chia-Wei Hsu, Elsa A Olivetti*, Ju Li*. "**Contrastive Learning of Language-Material Multimodal Representation**". *Nature Communications*, under revision (2026).
+27.  So Yeon Kim, Yang Jeong Park*, and Ju Li*. "**Leveraging neural network interatomic potentials for a foundation model of chemistry**". *npj Computational Materials*, under revision (2026).
+26.  Yang Jeong Park&dagger;, Jongbeom Kim&dagger;, Seung Un Lee, Jino Im*, Sungroh Yoon*, and Sang Il Seok*. "**Data-driven discovery of ammonium ions for post-treatment of perovskite solar cells via low-dimensional active learning**". *Advanced Materials*, under revision (2026).
+25.  Yang Jeong Park&dagger;, Mayank Kumaran, Chia-Wei Hsu, Elsa A Olivetti*, Ju Li*. "**Contrastive Learning of Language-Material Multimodal Representation**". *Nature Communications*, under revision (2026).
+24.  Heeseung Lee&dagger;, Hyuk Jun Yoo&dagger;, Hye Su Jang, Byeongho Park, Yang Jeong Park* and Sang Soo Han*. "**Toward self-driving laboratory 2.0 for chemistry and materials discovery**". *Materials Horizons*, Advance Article (2026). [[DOI]](https://doi.org/10.1039/D5MH01984B)
 23.  Chia-Wei Hsu, Nien-Ti Tsou, Yu-Cheng Chen, Yang Jeong Park*, Ju Li*. "**Frankenstein Optimizer: Harnessing the Potential by Revisiting Optimization Tricks**". *arXiv*, preprinted (2025).
 22.  Maciej Tomczak&dagger;, Yang Jeong Park&dagger;*, Chia-Wei Hsu, Payden Brown, Dario Massa, Piotr Sankowski, Ju Li*, and Stefanos Papanikolaou*. "**Forecasting Research Trends using Knowledge Graphs and Large Language Models**". *Advanced Intelligent Systems*, Online Published (2025). [[DOI]](http://doi.org/10.1002/aisy.202401124)
 21.  Hongbin Xu&dagger;, Yang Jeong Park&dagger;, Zhichu Ren, Daniel J. Zheng, Haojun Jia, Yuriy Román-Leshkov, Yang Shao-Horn*, Ju Li*. "**Alpha Fuel Cell: Maximizing and controlling delivered power for direct methanol fuel cell with actor-critic optimization**". *Nature Energy*, 10, 951-961 (2025). [[DOI]](https://www.nature.com/articles/s41560-025-01804-x)
